@@ -1,2 +1,5 @@
-音日 v1.0
-將資料夾內所有檔案部署至同一 HTTPS 靜態網站（例如 GitHub Pages）。iPhone 使用 Safari 開啟網站，分享 → 加入主畫面，再從主畫面開啟、匯入音樂。首次須連網完成快取。Mac 可在資料夾內執行 python3 -m http.server 8000，並開啟 http://localhost:8000 測試。iPhone 透過區域網路 HTTP 不保證支援 Service Worker，正式使用請採 HTTPS。音樂保存在各裝置各自的 IndexedDB，並不會跨裝置同步。請保留原檔。iOS 鎖定螢幕後自動接續播放與睡眠定時仍受系統限制。此版本尚未在實體 iPhone 測試。
+音日 v1.3
+保留原有 IndexedDB（oto-music，版本 1）及網站位址，不需清除網站資料。
+改善歌曲清單分批顯示、搜尋、切歌、隨機佇列、鎖定螢幕媒體資訊、匯入防重複及離線更新。新版快取在舊頁面關閉後啟用。
+部署至原 HTTPS 網站（GitHub Pages）。iPhone 使用 Safari 或既有主畫面捷徑開啟，首次更新需連網。音樂各自儲存在裝置的網站資料中，不會跨裝置同步，請保留原檔。不要清除網站資料。iOS 背景播放、自動接續及睡眠定時仍受系統限制。
+已做 JavaScript 語法及播放佇列邏輯檢查，尚未在實體 iPhone／iPad 測試。
